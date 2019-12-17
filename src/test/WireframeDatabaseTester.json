@@ -1,0 +1,280 @@
+{
+  "wireframers": [
+    {
+      "name": "You know nothing",
+      "userID": "TfeSFlqK95UXRc2EUgTfxN3EUaC2",
+      "width": 500,
+      "height": 600,
+      "lastModified": "12/14/2019, 1:38:23 PM",
+      "controls": [
+        {
+          "type": "Container",
+          "height": 20,
+          "left": 200,
+          "top": 200,
+          "key": 0,
+          "borderRadius": 2,
+          "color": "green"
+        },
+        {
+          "key": 1,
+          "type": "Label",
+          "text": "Login",
+          "height": 5,
+          "textColor": "#000000",
+          "textSize": 12,
+          "borderRadius": 20,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "color": "#000000",
+          "backgroundColor": "#ffffff",
+          "left": 0,
+          "top": 20
+        },
+        {
+          "key": 2,
+          "type": "TextField",
+          "hintText": "Username",
+          "height": 5,
+          "color": "#ffffff",
+          "textColor": "#000000",
+          "textSize": 12,
+          "borderColor": "red",
+          "borderRadius": 2,
+          "left": 22,
+          "top": 75
+        },
+        {
+          "key": 3,
+          "type": "TextButton",
+          "text": "Submit",
+          "height": 5,
+          "color": "blue",
+          "textColor": "#000000",
+          "textSize": 12,
+          "borderRadius": 2,
+          "borderColor": "red",
+          "left": 50,
+          "top": 200
+        }
+      ]
+    },
+    {
+      "name": "My Home Page",
+      "userID": "TfeSFlqK95UXRc2EUgTfxN3EUaC2",
+      "width": 500,
+      "height": 600,
+      "lastModified": "12/14/2019, 1:40:00 PM",
+      "controls": [
+        {
+          "type": "Container",
+          "height": 20,
+          "left": 200,
+          "key": 0,
+          "top": 200,
+          "borderRadius": 2,
+          "color": "blue"
+        },
+        {
+          "key": 1,
+          "type": "Label",
+          "text": "Home",
+          "height": 5,
+          "textColor": "#000000",
+          "textSize": 12,
+          "borderRadius": 20,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "color": "#000000",
+          "backgroundColor": "#ffffff",
+          "left": 200,
+          "top": 100
+        },
+        {
+          "key": 2,
+          "type": "TextField",
+          "hintText": "",
+          "height": 5,
+          "color": "#ffffff",
+          "textColor": "#000000",
+          "textSize": 12,
+          "borderRadius": 0,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "left": 22,
+          "top": 75
+        },
+        {
+          "key": 3,
+          "type": "TextButton",
+          "text": "Submit",
+          "height": 5,
+          "color": "blue",
+          "borderRadius": 0,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "textColor": "#000000",
+          "textSize": 12,
+          "left": 52,
+          "top": 25
+        }
+      ]
+    },
+    {
+      "name": "Login Page",
+      "userID": "ko7ZFxTl2uXiSqq2CmYG5mAtpoC3",
+      "width": 500,
+      "height": 600,
+      "lastModified": "12/15/2019, 1:38:00 PM",
+      "controls": [
+        {
+          "type": "Container",
+          "height": 300,
+          "width": 400,
+          "key": 0,
+          "borderRadius": 20,
+          "borderColor": "#000000",
+          "borderThickness": 5,
+          "backgroundColor": "#ffffff",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "key": 1,
+          "type": "Label",
+          "borderStyle": "none",
+          "text": "To-Do",
+          "height": 50,
+          "width": 100,
+          "textColor": "#000000",
+          "textSize": 30,
+          "borderRadius": 0,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "color": "#ffffff",
+          "backgroundColor": "#ffffff",
+          "left": 0,
+          "top": 20,
+          "x": 20,
+          "y": 20
+        },
+        {
+          "key": 2,
+          "type": "Label",
+          "text": "Clean Up Trash",
+          "height": 50,
+          "width": 200,
+          "textColor": "#000000",
+          "textSize": 25,
+          "borderRadius": 0,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "borderStyle": "none",
+          "color": "#ffffff",
+          "backgroundColor": "#ffffff",
+          "x": 20,
+          "y": 60
+        },
+        {
+          "key": 3,
+          "type": "TextButton",
+          "text": "Finish",
+          "height": 50,
+          "width": 70,
+          "textSize": 20,
+          "borderRadius": 0,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "borderStyle": "none",
+          "textColor": "#ffffff",
+          "backgroundColor": "#DC143C",
+          "x": 20,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "name": "Register Screen",
+      "userID": "ko7ZFxTl2uXiSqq2CmYG5mAtpoC3",
+      "width": 500,
+      "height": 600,
+      "lastModified": "12/14/2019, 1:40:00 PM",
+      "controls": [
+        {
+          "type": "Container",
+          "height": 300,
+          "width": 400,
+          "key": 0,
+          "borderRadius": 10,
+          "borderColor": "#000000",
+          "borderThickness": 2,
+          "backgroundColor": "#ffffff",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "Label",
+          "text": "Register",
+          "key": 1,
+          "height": 30,
+          "width": 50,
+          "textColor": "#000000",
+          "textSize": 12,
+          "borderRadius": 20,
+          "borderColor": "#000000",
+          "borderThickness": 0,
+          "color": "#000000",
+          "backgroundColor": "#ffffff",
+          "x": 20,
+          "y": 20
+        },
+        {
+          "type": "TextField",
+          "text": "Username",
+          "height": 40,
+          "width": 50,
+          "key": 2,
+          "color": "#ffffff",
+          "textColor": "#000000",
+          "textSize": 20,
+          "borderColor": "#DC143C",
+          "borderRadius": 2,
+          "borderThickness": 0,
+          "backgroundColor": "#ffffff",
+          "x": 100,
+          "y": 120
+        },
+        {
+          "type": "TextField",
+          "text": "Password",
+          "height": 50,
+          "width": 100,
+          "color": "#0000FF",
+          "key": 3,
+          "textColor": "#000000",
+          "textSize": 20,
+          "borderColor": "#DC143C",
+          "borderRadius": 2,
+          "borderThickness": 0,
+          "x": 120,
+          "y": 150
+        },
+        {
+          "key": 4,
+          "type": "TextButton",
+          "text": "Submit",
+          "textSize": 20,
+          "height": 50,
+          "width": 100,
+          "borderRadius": 5,
+          "borderColor": "#000000",
+          "borderThickness": 2,
+          "textColor": "#ffffff",
+          "backgroundColor": "#9932CC",
+          "x": 100,
+          "y": 200
+        }
+      ]
+    }
+  ]
+}
