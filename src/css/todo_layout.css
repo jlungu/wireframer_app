@@ -213,11 +213,12 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
   height: 50px;
 }
 .color_picker_label{
-  display: inline-block;
-  margin-left: 10px;
+  margin-left: 40px;
+  margin-bottom: -10px;
 }
 .color_pickers{
   margin-left: -20px;
+  margin-top: 20px;
 }
 #selected_1 {
   display: inline-block;
@@ -612,4 +613,10 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
   border-color: black;
   width: 10px;
   background-color: purple;
+}
+.color_picker{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  vertical-align: middle;
 }

@@ -6,7 +6,6 @@ import { compose } from "redux";
 import { handleWireframerUpdate } from "../../store/database/asynchHandler";
 import { handleSelectUpdate } from "../../store/database/asynchHandler";
 
-
 import { GithubPicker } from "react-color";
 
 class WireframerEditForm extends Component {
@@ -28,15 +27,14 @@ class WireframerEditForm extends Component {
 
   updateLabel = event => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected].text =
-      event.target.value;
+    controls[this.props.selected].text = event.target.value;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
     this.setState({ text: event.target.value });
@@ -44,15 +42,14 @@ class WireframerEditForm extends Component {
 
   updateTextSize = event => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected].textSize =
-      event.target.value;
+    controls[this.props.selected].textSize = event.target.value;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
     this.setState({ textSize: event.target.value });
@@ -60,15 +57,14 @@ class WireframerEditForm extends Component {
 
   updateBorderRadius = event => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected
-    ].borderRadius = event.target.value;
+    controls[this.props.selected].borderRadius = event.target.value;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
     this.setState({ borderRadius: event.target.value });
@@ -76,61 +72,57 @@ class WireframerEditForm extends Component {
 
   updateBorderThickness = event => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected
-    ].borderThickness = event.target.value;
+    controls[this.props.selected].borderThickness = event.target.value;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
     this.setState({ borderThickness: event.target.value });
   };
 
-  updateBackgroundColor = (color) => {
+  updateBackgroundColor = color => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected].backgroundColor =
-      color;
+    controls[this.props.selected].backgroundColor = color;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
   };
 
-  updateBorderColor = (color) => {
+  updateBorderColor = color => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected].borderColor =
-      color;
+    controls[this.props.selected].borderColor = color;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
   };
 
-  updateTextColor = (color) => {
+  updateTextColor = color => {
     let controls = this.props.wireframer.controls;
-    controls[this.props.selected].textColor =
-      color;
+    controls[this.props.selected].textColor = color;
     let wireframer = {
       controls: controls,
       name: this.props.wireframer.name,
       userID: this.props.wireframer.userID,
       width: this.props.wireframer.width,
       height: this.props.wireframer.height,
-      lastModified: this.props.wireframer.lastModified,
+      lastModified: this.props.wireframer.lastModified
     };
     this.props.updateWireframer(wireframer);
   };
@@ -242,86 +234,89 @@ class WireframerEditForm extends Component {
             Border Radius
           </label>
         </div>
-        <div class="">
+        <div class="color_picker">
           <div
             style={backgroundStyle}
             onClick={this.toggleBackgroundColorSwitch}
-          ></div>
-          <span class="color_picker_label">Background Color</span>
-          {this.state.showBackgroundColor ? (
-            <GithubPicker
-              color={this.state.backgroundColor}
-              onChangeComplete={this.handleBackgroundColorChange}
-              colors={[
-                "#ffffff",
-                "#000000",
-                "#B80000",
-                "#DB3E00",
-                "#FCCB00",
-                "#008B02",
-                "#006B76",
-                "#1273DE",
-                "#004DCF",
-                "#5300EB",
-                "#EB9694",
-                "#FAD0C3",
-                "#FEF3BD",
-                "#C1E1C5"
-              ]}
-            />
-          ) : null}
+          >
+            <span class="color_picker_label">Background</span>
+            {this.state.showBackgroundColor ? (
+              <GithubPicker
+                color={this.state.backgroundColor}
+                onChangeComplete={this.handleBackgroundColorChange}
+                colors={[
+                  "#ffffff",
+                  "#000000",
+                  "#B80000",
+                  "#DB3E00",
+                  "#FCCB00",
+                  "#008B02",
+                  "#006B76",
+                  "#1273DE",
+                  "#004DCF",
+                  "#5300EB",
+                  "#EB9694",
+                  "#FAD0C3",
+                  "#FEF3BD",
+                  "#C1E1C5"
+                ]}
+              />
+            ) : null}
+          </div>
         </div>
-        <div>
-          <div style={borderStyle} onClick={this.toggleBorderColorSwitch}></div>
-          <span class="color_picker_label">Border Color</span>
-          {this.state.showBorderColor ? (
-            <GithubPicker
-              color={this.state.borderColor}
-              colors={[
-                "#ffffff",
-                "#000000",
-                "#B80000",
-                "#DB3E00",
-                "#FCCB00",
-                "#008B02",
-                "#006B76",
-                "#1273DE",
-                "#004DCF",
-                "#5300EB",
-                "#EB9694",
-                "#FAD0C3",
-                "#FEF3BD",
-                "#C1E1C5"
-              ]}
-              onChangeComplete={this.handleBorderColorChange}
-            />
-          ) : null}
+        <div class="color_picker">
+          <div style={borderStyle} onClick={this.toggleBorderColorSwitch}>
+            <span class="color_picker_label">Border</span>
+            {this.state.showBorderColor ? (
+              <GithubPicker
+                color={this.state.borderColor}
+                colors={[
+                  "#ffffff",
+                  "#000000",
+                  "#B80000",
+                  "#DB3E00",
+                  "#FCCB00",
+                  "#008B02",
+                  "#006B76",
+                  "#1273DE",
+                  "#004DCF",
+                  "#5300EB",
+                  "#EB9694",
+                  "#FAD0C3",
+                  "#FEF3BD",
+                  "#C1E1C5"
+                ]}
+                onChangeComplete={this.handleBorderColorChange}
+              />
+            ) : null}
+          </div>
         </div>
-        <div class="">
-          <div style={textStyle} onClick={this.toggleTextColorSwitch}></div>
-          <span class="color_picker_label">Text Color</span>
-          {this.state.showTextColor ? (
-            <GithubPicker
-              color={this.state.textColor}
-              colors={[
-                "#ffffff",
-                "#000000",
-                "#B80000",
-                "#DB3E00",
-                "#FCCB00",
-                "#008B02",
-                "#006B76",
-                "#1273DE",
-                "#004DCF",
-                "#5300EB",
-                "#EB9694",
-                "#FAD0C3",
-                "#FEF3BD",
-                "#C1E1C5"
-              ]}
-              onChangeComplete={this.handleTextColorChange}
-            />
-          ) : null}
+        <div class="color_picker">
+          <div style={textStyle} onClick={this.toggleTextColorSwitch}>
+            <span class="color_picker_label">Text</span>
+            {this.state.showTextColor ? (
+              <GithubPicker
+                color={this.state.textColor}
+                colors={[
+                  "#ffffff",
+                  "#000000",
+                  "#B80000",
+                  "#DB3E00",
+                  "#FCCB00",
+                  "#008B02",
+                  "#006B76",
+                  "#1273DE",
+                  "#004DCF",
+                  "#5300EB",
+                  "#EB9694",
+                  "#FAD0C3",
+                  "#FEF3BD",
+                  "#C1E1C5"
+                ]}
+                onChangeComplete={this.handleTextColorChange}
+              />
+            ) : null}
+          </div>
         </div>
       </div>
     );
