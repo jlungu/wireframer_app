@@ -314,6 +314,7 @@ class WireframerControls extends React.Component {
           <div id="zoom_control">
             <a
               class="btn-floating btn-medium waves-effect waves-light red zoom_buttons"
+              disabled={true}
               onClick={this.handleZoomIn}
             >
               <i class="material-icons">zoom_in</i>
@@ -321,6 +322,7 @@ class WireframerControls extends React.Component {
             <span class="card-content control_labels">{zoom}</span>
             <a
               class="btn-floating btn-medium waves-effect waves-light red zoom_buttons"
+              disabled={true}
               onClick={this.handleZoomOut}
             >
               <i class="material-icons">zoom_out</i>
