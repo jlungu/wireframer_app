@@ -170,7 +170,7 @@ class WireframerScreen extends React.Component {
         <div class="col s8 m3">
           <WireframerControls initial={this.props.wfs[this.getKey()]}/>
         </div>
-        <div class="col">
+        <div class="col s8 m5">
           <WireframerPreview />
         </div>
         <div class="col s8 m3">

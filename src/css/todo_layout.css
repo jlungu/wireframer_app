@@ -193,6 +193,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
 }
 .controls-card{
   height: 610px;
+  width: 270px;
   display: inline-block;
 }
 .preview_card {
@@ -202,6 +203,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
 .edit_card {
   height: 610px;
   text-align:center;
+  width: 270px;
   display: inline-block;
 }
 .controls_title{
