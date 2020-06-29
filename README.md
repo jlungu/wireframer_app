@@ -1,11 +1,22 @@
-Final Project for CSE 316 - Fundamentals of Software Development 
+# A simple Wireframer Web Application
+### Home Page
+![](images/gal_1.png)
+### Login Page
+![](images/gal_2.png)
+### Wireframer Page(1)
+![](images/gal_3.png)
+### Wireframer Page(2)
+![](images/gal_4.png)
+### Pop Up
+![](images/gal_5.png)
+
+## Final Project for CSE 316 - Fundamentals of Software Development 
 We were tasked with creating a sort of Wireframer Application, where a user may create their own wireframer, a sort of "web page" where they may add buttons, text boxes, labels, etc. The assignment was for us to only create this wireframer, not necessarily have the app build a whole new website. Thus, its more of an intro "page builder". 
 
-Written with JavaScript, with React.js/Redux.
-
+## Written with JavaScript, with React.js/Redux.
 Contributers: jlungu
 
-Things i'm currently working on:
+## Things i'm currently working on:
 - Fixing alignment issues with zooming in/out of wireframer preview screen
 - Fixing dimensions of wireframer preview screen.
 - General Bug Fixes with UI, to make it look perfect.
